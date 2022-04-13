@@ -127,7 +127,7 @@ public class App {
 
             }
             case 4:{
-                //Currently just grabs all accounts
+                //Currently just grabs all accounts, was working to grab based on conditions but got some weird errors, still do with grab all but at least it returns correct data.
                List<Account> allAccounts = App.accountServices.accountsOwnedByUser();
                for (int i = 0; i < allAccounts.size(); i++){
                    System.out.println(allAccounts.get(i));

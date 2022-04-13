@@ -112,6 +112,8 @@ public class AccountDAOImplemented implements AccountDAO {
         try{
             Connection conn = ConnectionUtil.createConnection();
             String sql = "delete from account where account_id = ?";
+            //Search for accounts based on id
+            //If one is found delete and return true
             PreparedStatement ps = conn.prepareStatement(sql);
             ps.setInt(1,id);
             ps.execute();

@@ -4,7 +4,7 @@ public class Transaction {
     private int id;
     private int userId;
     private int accountId;
-
+    //Never finished for P0 but set up because i plan to tinker with this in the future as i suck less with coding this sort of thing
     public Transaction(){
 
     }

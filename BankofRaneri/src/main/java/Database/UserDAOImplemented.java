@@ -93,9 +93,11 @@ public class UserDAOImplemented implements UserDAO{
         try{
             Connection conn = ConnectionUtil.createConnection();
             String sql = "delete from users where user_id = ?";
+            //Find user based on userid/primary key
             PreparedStatement ps = conn.prepareStatement(sql);
             ps.setInt(1,id);
             ps.execute();
+            //Return true if an account is found and deleted
             return true;
         } catch (Exception e) {
             e.printStackTrace();
@@ -106,6 +108,7 @@ public class UserDAOImplemented implements UserDAO{
 
     @Override
     public List<User> getAllUsers() {
+
         return null;
     }
 }
